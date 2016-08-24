@@ -1,0 +1,134 @@
+%!Adobe-FontList 1.16
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Converse\photo\My conv\Font\without_notice\License - READ THIS.txt
+FileModTime:1444784604
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:WithoutNotice
+FamilyName:Without Notice
+StyleName:Regular
+FullName:Without Notice
+MenuName:Without Notice
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Converse\photo\My conv\Font\without_notice\Without Notice.otf
+DataFormat:sfntData
+FileLength:199716
+FileModTime:1444792162
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Without Notice
+NameArray:0,Win,1,Without Notice
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Converse\photo\My conv\Font\unisansfree\EULA Free Font License Ver. 2.0.pdf
+FileModTime:1435039348
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:UniSansHeavyItalicCAPS
+FamilyName:Uni Sans
+StyleName:Heavy Italic CAPS
+FullName:Uni Sans Heavy Italic CAPS
+MenuName:Uni Sans Heavy Italic CAPS
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Converse\photo\My conv\Font\unisansfree\Uni Sans Heavy Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:115724
+FileModTime:1402060785
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Uni Sans Heavy Italic CAPS
+NameArray:0,Win,1,Uni Sans Heavy Italic CAPS
+NameArray:0,Win,16,Uni Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:UniSansHeavyCAPS
+FamilyName:Uni Sans
+StyleName:Heavy CAPS
+FullName:Uni Sans Heavy CAPS
+MenuName:Uni Sans Heavy CAPS
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Converse\photo\My conv\Font\unisansfree\Uni Sans Heavy.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:113772
+FileModTime:1402060794
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Uni Sans Heavy CAPS
+NameArray:0,Win,1,Uni Sans Heavy CAPS
+NameArray:0,Win,16,Uni Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:UniSansThinItalicCAPS
+FamilyName:Uni Sans
+StyleName:Thin Italic CAPS
+FullName:Uni Sans Thin Italic CAPS
+MenuName:Uni Sans Thin Italic CAPS
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Converse\photo\My conv\Font\unisansfree\Uni Sans Thin Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:117772
+FileModTime:1402060809
+WeightClass:250
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Uni Sans Thin Italic CAPS
+NameArray:0,Win,1,Uni Sans Thin Italic CAPS
+NameArray:0,Win,16,Uni Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:UniSansThinCAPS
+FamilyName:Uni Sans
+StyleName:Thin CAPS
+FullName:Uni Sans Thin CAPS
+MenuName:Uni Sans Thin CAPS
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Converse\photo\My conv\Font\unisansfree\Uni Sans Thin.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:114344
+FileModTime:1402060801
+WeightClass:250
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Uni Sans Thin CAPS
+NameArray:0,Win,1,Uni Sans Thin CAPS
+NameArray:0,Win,16,Uni Sans
+%EndFont
+
