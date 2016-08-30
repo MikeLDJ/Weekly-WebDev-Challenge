@@ -1,0 +1,18 @@
+// contact styles
+
+.contact-container {
+  padding: 2em;
+}
+
+.email-box {
+  width: 10em;
+
+  p {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+    &::after {
+      content: 'lahcim';
+    }
+  }
+}

@@ -67,7 +67,7 @@
       "modules": "_modules",
       "layouts": "_layouts",
       "images": "_images",
-      "styles": "_styles",
+      "styles": "_styles/",
       "scripts": "_scripts",
       "data": "_data"
     },

@@ -1,5 +1,17 @@
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
 
+// Import Tools
+@import '_tools/font';
+@import '_tools/color';
+
 // Import Modules
-@import 'modules/browsehappy';
+@import '_modules/browsehappy';
+
+// Import Basic
+@import '_basic/nav';
+@import '_basic/cover';
+
+body {
+  background-color: #ccc;
+}

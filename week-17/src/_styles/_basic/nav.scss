@@ -1,0 +1,25 @@
+// nav styles
+
+nav {
+  display: flex;
+
+  .logo {
+    height: 3.7em;
+    margin: 1.4em 11em 1.2em 1em;
+  }
+
+  ul {
+    display: flex;
+    font-family: 'Nanami', sans-serif;
+    font-size: 1.1em;
+    list-style: none;
+    margin-top: 3.2em;
+    padding-left: 0;
+    text-transform: uppercase;
+
+    li {
+      letter-spacing: .15em;
+      margin-left: 3.7em;
+    }
+  }
+}
