@@ -1,0 +1,6 @@
+// mixins
+
+@mixin flex($position) {
+  display: flex;
+  justify-content: $position;
+}

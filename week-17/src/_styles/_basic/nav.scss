@@ -1,37 +1,35 @@
 // nav styles
 
-%nav {
-  display: flex;
-  justify-content: center;
-}
-
-/*
-.nav {
-  @extend %nav;
-  height: 6.25em;
-}
-
 nav {
-  @extend %nav;
-  // padding-top: .35em;
+  @include flex(center);
+  align-items: center;
+  height: 6.25em;
+  margin-left: auto;
+  margin-right: auto;
   width: 80em;
 
   .logo {
-    flex-grow: 1;
-    height: 3.7em;
+    flex-grow: 2;
+
+    img {
+      padding-top: .8em;
+    }
   }
 
-  a {
-    color: black;
-    display: flex;
+  .nav {
+    @include flex(space-between);
+    flex-grow: 3;
     flex-wrap: nowrap;
-    font-family: 'Nanami', sans-serif;
-    font-size: 1.1em;
-    letter-spacing: .15em;
-    list-style: none;
-    padding: 1.9em 0 0 3.6em;
-    text-decoration: none;
-    text-transform: uppercase;
+
+    a {
+      color: $link-color;
+      font-family: 'Nanami', sans-serif;
+      font-size: 1.1em;
+      letter-spacing: .15em;
+      list-style: none;
+      padding-top: 1.8em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
   }
 }
-*/
