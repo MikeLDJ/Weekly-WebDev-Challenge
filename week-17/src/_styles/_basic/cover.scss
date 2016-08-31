@@ -1,14 +1,29 @@
 // cover styles
 
 .cover {
-  background-color: $background-color;
+  background-color: $background-cover;
   display: flex;
   flex-direction: column;
-  height: 48em;
+  height: 770px;
 
   img {
     align-self: center;
     margin-top: 13.2em;
     max-width: 55em;
+  }
+
+  h4 {
+    align-self: center;
+    color: $font-light;
+    font-size: 1.56em;
+    font-weight: normal;
+    margin-top: 1.82em;
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+      content: '-';
+      margin: 0 .5em;
+    }
   }
 }

@@ -12,9 +12,15 @@
 // Import Basic
 @import '_basic/nav';
 @import '_basic/cover';
+@import '_basic/reservation';
 
 body {
-  // background-color: #ccc;
+  nav,
+  .cover,
+  .reservation {
+    font-family: 'Nanami', Arial, sans-serif;
+    letter-spacing: .15em;
+  }
 }
 
 * {

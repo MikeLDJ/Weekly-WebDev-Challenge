@@ -3,7 +3,7 @@
 nav {
   @include flex(center);
   align-items: center;
-  height: 6.25em;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
   width: 80em;
@@ -22,9 +22,9 @@ nav {
     flex-wrap: nowrap;
 
     a {
-      color: $link-color;
-      font-family: 'Nanami', sans-serif;
+      color: $link;
       font-size: 1.1em;
+      font-weight: bold;
       letter-spacing: .15em;
       list-style: none;
       padding-top: 1.8em;
