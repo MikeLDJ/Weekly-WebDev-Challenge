@@ -1,21 +1,18 @@
 extends _layouts/base
 
 block content
-  .nav
-    nav
-      .logo
-        img(src="images/nav-logo.png")
-      ul
-        li home
-        li reservation
-        li menu
-        li blog
-        li features
-        li shop
-        li contacts
+  nav
+    .logo
+      a(href='#home')
+        img(src="images/nav-logo.png" alt="Top Food & Drink Logo")
+    .nav
+      each element in ['home', 'reservation', 'menu', 'blog', 'features', 'shop', 'contacts']
+        - url= "#" + element
+        a(href=url)
+          =element
   section
     .cover
-      h1 Taste on Our hands!
+      img(src="images/slogan-taste-on.png" alt="Taste on Our hands")
       h4 Wellcome
   aside
     .reservation

@@ -1,25 +1,37 @@
 // nav styles
 
-nav {
+%nav {
   display: flex;
+  justify-content: center;
+}
+
+/*
+.nav {
+  @extend %nav;
+  height: 6.25em;
+}
+
+nav {
+  @extend %nav;
+  // padding-top: .35em;
+  width: 80em;
 
   .logo {
+    flex-grow: 1;
     height: 3.7em;
-    margin: 1.4em 11em 1.2em 1em;
   }
 
-  ul {
+  a {
+    color: black;
     display: flex;
+    flex-wrap: nowrap;
     font-family: 'Nanami', sans-serif;
     font-size: 1.1em;
+    letter-spacing: .15em;
     list-style: none;
-    margin-top: 3.2em;
-    padding-left: 0;
+    padding: 1.9em 0 0 3.6em;
+    text-decoration: none;
     text-transform: uppercase;
-
-    li {
-      letter-spacing: .15em;
-      margin-left: 3.7em;
-    }
   }
 }
+*/
