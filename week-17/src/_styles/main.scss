@@ -3,8 +3,8 @@
 
 // Import Tools
 @import '_modules/mixins';
-@import '_tools/font';
 @import '_tools/color';
+@import '_tools/font';
 
 // Import Modules
 @import '_modules/browsehappy';
@@ -13,15 +13,9 @@
 @import '_basic/nav';
 @import '_basic/cover';
 @import '_basic/reservation';
+@import '_basic/menu';
 
-body {
-  nav,
-  .cover,
-  .reservation {
-    font-family: 'Nanami', Arial, sans-serif;
-    letter-spacing: .15em;
-  }
-}
+//General
 
 * {
   // border: 1px solid red;

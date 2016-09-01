@@ -1,1 +1,63 @@
 //menu
+
+.menu {
+  @include flex(center);
+  flex-direction: column;
+
+  .special-moment {
+    background-color: $background-menu;
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+
+    .menu-picture {
+      background-image: url('../../images/menu-picture.jpg');
+      flex-basis: 50%;
+    }
+
+    .menu-slogan {
+      @include flex(center);
+      flex-basis: 50%;
+      flex-direction: column;
+      text-align: center;
+
+      .container {
+        width: 750px;
+      }
+
+      h2 {
+        color: $button;
+        font-size: 2.82em;
+        font-weight: bold;
+        letter-spacing: .12em;
+        margin: -0.7em 0 .1em;
+        padding: 0 4em;
+        text-transform: uppercase;
+      }
+
+      img {
+        margin: 1.2em 0;
+
+      }
+
+      p {
+        font-size: 1.125em;
+        letter-spacing: .095em;
+        margin: 0 6em;
+        text-align: justify;
+
+        &:nth-child(3) {
+          text-align: center;
+        }
+
+        &:last-child {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .menu-full {
+    @include container;
+  }
+}

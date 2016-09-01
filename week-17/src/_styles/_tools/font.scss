@@ -34,3 +34,32 @@
   font-weight: normal;
   src: url('../../fonts/master_of_break-webfont.woff2') format('woff2'), url('../../fonts/master_of_break-webfont.woff') format('woff');
 }
+
+nav,
+.cover,
+.reservation,
+main {
+  font-family: 'Nanami', Arial, sans-serif;
+  letter-spacing: .15em;
+}
+
+h1 {
+  color: $title;
+  font-family: 'Nanami Book', Arial, sans-serif;
+  font-size: 2.5em;
+  letter-spacing: normal;
+  margin: .35em 0 .5em;
+  text-transform: uppercase;
+
+  span {
+    font-family: 'Master Of Break', Georgia, serif;
+    margin-left: .4em;
+    text-transform: capitalize;
+  }
+}
+
+p {
+  color: $font-medium;
+  font-family: 'Nanami Light', Arial, sans-serif;
+  letter-spacing: normal;
+}

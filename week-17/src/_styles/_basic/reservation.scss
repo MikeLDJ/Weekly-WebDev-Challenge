@@ -1,45 +1,5 @@
 //reservation
 
 .reservation {
-  @include flex(center);
-  align-items: center;
-  flex-direction: column;
-  height: 37.5em;
-
-  h1 {
-    color: $title;
-    font-family: 'Nanami Book', Arial, sans-serif;
-    font-size: 2.5em;
-    letter-spacing: normal;
-    margin: .35em 0 .5em;
-    text-transform: uppercase;
-
-    span {
-      font-family: 'Master Of Break', Georgia, serif;
-      margin-left: .4em;
-      text-transform: capitalize;
-    }
-  }
-
-  p {
-    color: $font-medium;
-    font-family: 'Nanami Light', Arial, sans-serif;
-    font-size: 1.375em;
-    letter-spacing: normal;
-    margin: 1em;
-    text-align: center;
-    width: 1070px;
-  }
-
-  button {
-    background-color: $button;
-    border: 0;
-    color: $font-btn;
-    font-family: 'Nanami Book', Arial, sans-serif;
-    height: 60px;
-    letter-spacing: .1em;
-    margin: 1.6em;
-    text-transform: uppercase;
-    width: 240px;
-  }
+  @include container;
 }
