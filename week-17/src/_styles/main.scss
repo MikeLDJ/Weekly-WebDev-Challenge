@@ -16,8 +16,14 @@
 @import '_basic/menu';
 @import '_basic/shop';
 @import '_basic/gallery';
+@import '_basic/blog';
+@import '_basic/contact';
 
 //General
+
+body {
+  // font-size: 14px;
+}
 
 //Debug
 * {

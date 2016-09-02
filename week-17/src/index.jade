@@ -30,7 +30,7 @@ block content
             p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
             p dolor in reprehenderit
       article.menu-full
-        h1 Our
+        h4 Our
           span Baking
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
         button View Full Menu
@@ -66,14 +66,31 @@ block content
         .gallery-element
     section.blog
       .blog-info
-        h3 Our Blog
+        h4 Our
+          span Blog
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
       .blog-promo
-  section
-    .contacts
-      .contact-form
-      .contact-details
-      .contact-map
+        - for (var i = 0 ; i < 4; i++) {
+          .view-promo
+            h5 How To Make 
+              span The Food
+            button View
+        - }
+        
+  section.contact
+    .contact-form
+      h4 Contact Us
+      form
+        .form-data
+          input(type="text" id="name" placeholder="Your name")
+          input(type="email" id="email" placeholder="Email address")
+          input(type="text" id="subject" placeholder="Subject")
+        .form-message
+          textarea(name="message")
+          button(type="submit")
+            | Submit Now
+    .contact-details
+    .contact-map
   footer
     h2 Top
     p Copyright 2016. All rights Reserved

@@ -8,7 +8,7 @@
     background-color: $background-menu;
     display: flex;
     flex-direction: row;
-    height: 750px;
+    height: 46.875em;
 
     .menu-picture {
       @include img('../../images/menu-picture.jpg', right, 50%);
@@ -21,7 +21,7 @@
       text-align: center;
 
       .container {
-        width: 750px;
+        width: 46.875em;
       }
 
       h2 {
@@ -54,5 +54,13 @@
 
   .menu-full {
     @include container;
+
+    h4 {
+      margin: .35em 0 .5em -0.3em;
+
+      span {
+        margin-left: .35em;
+      }
+    }
   }
 }

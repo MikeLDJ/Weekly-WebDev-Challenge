@@ -44,17 +44,18 @@ main,
   letter-spacing: .15em;
 }
 
-h1 {
+h1,
+h4 {
   color: $title;
   font-family: 'Nanami Book', Arial, sans-serif;
   font-size: 2.5em;
   letter-spacing: normal;
-  margin: .35em 0 .5em -0.3em;
+  // margin: .35em 0 .5em -0.3em;
   text-transform: uppercase;
 
   span {
     font-family: 'Master Of Break', Georgia, serif;
-    margin-left: .35em;
+    // margin-left: .35em;
     text-transform: capitalize;
   }
 }
@@ -66,6 +67,16 @@ h2 {
   letter-spacing: .12em;
   text-align: center;
   text-transform: uppercase;
+}
+
+h5 {
+  @extend h4;
+  font-size: 1.5em;
+  text-align: center;
+
+  span {
+    display: block;
+  }
 }
 
 p {

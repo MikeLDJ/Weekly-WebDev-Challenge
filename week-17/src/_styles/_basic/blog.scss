@@ -1,0 +1,75 @@
+// blog
+
+.blog {
+  @include flex(center);
+  flex-direction: column;
+  height: 52.8125em;
+}
+
+.blog-info {
+  @include container;
+  height: 27.8125em;
+
+  h4 {
+    margin: 2.7em 0 .5em -0.3em;
+    text-transform: capitalize;
+
+    span {
+      margin-left: .35em;
+    }
+  }
+
+  p {
+    margin-top: .9em;
+  }
+}
+
+.blog-promo {
+  @include flex(center);
+  padding-bottom: 6.875em;
+
+  .view-promo {
+    @include button;
+    height: 21.875em;
+    margin: .8125em;
+    width: 18.5em;
+
+    &:first-child {
+      @include img('../../images/htm-bread.jpg', center, normal)
+    }
+
+    &:nth-child(2) {
+      @include img('../../images/htm-burger.jpg', center, normal)
+    }
+
+    &:nth-child(3) {
+      @include img('../../images/htm-breakfast.jpg', center, normal)
+    }
+
+    &:last-child {
+      @include img('../../images/htm-pizza.jpg', center, normal)
+    }
+
+    h5 {
+      background-color: $font-light;
+      color: $pipe;
+      margin: 0 0 0 -0.25em;
+      height: 5em;
+      width: 12.8333em;
+      padding-top: 1em;
+      border-radius: 0 0 12.83em 12.83em;
+
+
+      span {
+        color: $font-blog;
+      }
+    }
+
+    button {
+      display: none;
+      height: 2.6em;
+      margin: 2em auto;
+      width: 6em;
+    }
+  }
+}
