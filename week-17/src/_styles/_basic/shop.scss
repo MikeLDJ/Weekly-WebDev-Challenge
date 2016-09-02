@@ -2,8 +2,8 @@
 
 .shop {
   @include flex(flex-end);
+  @include img('../../images/lemon-cake.jpg', center, 100%);
   align-items: center;
-  background: url('../../images/lemon-cake.jpg') center;
   height: 800px;
 
   .promo {
@@ -66,6 +66,8 @@
   }
 
   .freeship {
+    margin: 0 2em;
+
     #freeship-sprite {
       background: url('../../images/shop-icons.png') 263px;
       height: 83px;
@@ -83,4 +85,9 @@
     }
   }
 
+  .pipe {
+    background-color: $pipe;
+    height: 105px;
+    width: 2px;
+  }
 }

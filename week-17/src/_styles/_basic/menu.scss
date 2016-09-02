@@ -11,8 +11,7 @@
     height: 750px;
 
     .menu-picture {
-      background: url('../../images/menu-picture.jpg') right;
-      flex-basis: 50%;
+      @include img('../../images/menu-picture.jpg', right, 50%);
     }
 
     .menu-slogan {
@@ -26,13 +25,9 @@
       }
 
       h2 {
-        color: $button;
         font-size: 2.82em;
-        font-weight: bold;
-        letter-spacing: .12em;
         margin: -0.7em 0 .1em;
         padding: 0 4em;
-        text-transform: uppercase;
       }
 
       img {

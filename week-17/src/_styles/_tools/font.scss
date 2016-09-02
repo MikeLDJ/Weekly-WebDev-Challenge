@@ -38,7 +38,8 @@
 nav,
 .cover,
 .reservation,
-main {
+main,
+.gallery-element>p {
   font-family: 'Nanami', Arial, sans-serif;
   letter-spacing: .15em;
 }
@@ -56,6 +57,15 @@ h1 {
     margin-left: .35em;
     text-transform: capitalize;
   }
+}
+
+h2 {
+  color: $button;
+  font-size: 3.125em;
+  font-weight: bold;
+  letter-spacing: .12em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 p {

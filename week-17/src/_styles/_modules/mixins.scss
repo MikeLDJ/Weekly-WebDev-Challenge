@@ -36,3 +36,9 @@
   flex-direction: column;
   height: 600px;
 }
+
+@mixin img($url, $position, $width) {
+  background: url($url) $position;
+  background-size: cover;
+  flex-basis: $width;
+}
