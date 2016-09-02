@@ -1,0 +1,86 @@
+// shop
+
+.shop {
+  @include flex(flex-end);
+  align-items: center;
+  background: url('../../images/lemon-cake.jpg') center;
+  height: 800px;
+
+  .promo {
+    flex-basis: 50%;
+
+    img {
+      margin: -3.3em 0 3.5em .4em;
+    }
+
+    p {
+      color: $font-light;
+      font-size: 1.125em;
+      margin: 0 3em;
+      width: 500px;
+
+    }
+
+    .price {
+      font-family: 'Master Of Break', Georgia, serif;
+      font-size: 3.125em;
+      margin: 2.1rem 3.1rem;
+    }
+
+    button {
+      background-color: transparent;
+      border: 1px solid $font-light;
+      color: $font-light;
+      font-family: 'Nanami Book', Arial, sans-serif;
+      font-size: 1.125em;
+      margin-left: 3em;
+      padding: 1em 2em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.shopping {
+  @include flex(space-between);
+  align-items: center;
+  height: 250px;
+  margin: 0 auto;
+  width: 1080px;
+
+  p {
+    font-family: 'Nanami Book', Arial, sans-serif;
+    font-size: 1.875em;
+    text-align: center;
+  }
+
+  .online {
+    align-self: center;
+    text-align: center;
+
+    #online-sprite {
+      background: url('../../images/shop-icons.png');
+      height: 83px;
+      margin: 2em 2.8em -0.4em;
+      width: 110px;
+    }
+  }
+
+  .freeship {
+    #freeship-sprite {
+      background: url('../../images/shop-icons.png') 263px;
+      height: 83px;
+      margin: 2em 0 -0.4em -0.8em;
+      width: 158px;
+    }
+  }
+
+  .quality {
+    #quality-sprite {
+      background: url('../../images/shop-icons.png') 106px;
+      height: 83px;
+      margin: 2em 3.8em -0.4em;
+      width: 106px;
+    }
+  }
+
+}
