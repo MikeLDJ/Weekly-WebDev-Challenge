@@ -39,7 +39,8 @@ nav,
 .cover,
 .reservation,
 main,
-.gallery-element>p {
+.gallery-element>p,
+input {
   font-family: 'Nanami', Arial, sans-serif;
   letter-spacing: .15em;
 }
@@ -50,12 +51,10 @@ h4 {
   font-family: 'Nanami Book', Arial, sans-serif;
   font-size: 2.5em;
   letter-spacing: normal;
-  // margin: .35em 0 .5em -0.3em;
   text-transform: uppercase;
 
   span {
     font-family: 'Master Of Break', Georgia, serif;
-    // margin-left: .35em;
     text-transform: capitalize;
   }
 }

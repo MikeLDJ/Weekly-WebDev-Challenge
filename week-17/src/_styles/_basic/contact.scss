@@ -1,5 +1,60 @@
 // contact
 
 .contact {
-  background-color: grey;
+  @include flex(center);
+  @include img('../../images/pie.jpg', center, normal);
+  @include button;
+  height: 800px;
+
+  h4 {
+    color: $font-light;
+    margin: 3.6em 0 1em;
+    text-align: center;
+    text-transform: capitalize;
+
+    span {
+      margin-left: .6em;
+    }
+  }
+
+  form {
+    @include flex(center);
+    align-items: center;
+    flex-direction: column;
+    width: 80.75em;
+
+    .form-data {
+      input {
+        @include input;
+        height: 50px;
+        width: 17.6em;
+        padding: .08em 2em;
+        margin: 1em;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .form-message {
+      margin: 0 auto;
+      width: 71.6em;
+
+      textarea {
+        @include input;
+        height: 10em;
+      }
+
+      button {
+        width: inherit;
+        margin: 0;
+      }
+    }
+  }
+
 }

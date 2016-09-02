@@ -42,3 +42,10 @@
   background-size: cover;
   flex-basis: $width;
 }
+
+@mixin input {
+  background-color: transparent;
+  border: 1px solid $font-light;
+  color: $font-light;
+  font-size: 1.125em;
+}

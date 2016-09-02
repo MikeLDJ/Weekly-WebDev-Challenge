@@ -3,7 +3,7 @@
 .blog {
   @include flex(center);
   flex-direction: column;
-  height: 52.8125em;
+  height: 56em;
 }
 
 .blog-info {
@@ -26,7 +26,7 @@
 
 .blog-promo {
   @include flex(center);
-  padding-bottom: 6.875em;
+  padding-bottom: 10em;
 
   .view-promo {
     @include button;
