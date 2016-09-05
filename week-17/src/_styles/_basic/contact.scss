@@ -19,42 +19,46 @@
 
   form {
     @include flex(center);
-    align-items: center;
     flex-direction: column;
     width: 80.75em;
 
+    .form-data,
+    .form-message {
+      @include flex(center);
+      padding: 1.1em;
+    }
+
     .form-data {
+      flex-direction: row;
+
       input {
         @include input;
-        height: 50px;
-        width: 17.6em;
-        padding: .08em 2em;
-        margin: 1em;
+        height: 2.8em;
+        letter-spacing: normal;
+        padding: .08em 1.6em;
+        width: 100%;
 
-        &:first-child {
-          margin-left: 0;
+        &:nth-child(2) {
+          margin: 0 2.8em;
         }
 
-        &:last-child {
-          margin-right: 0;
-        }
       }
     }
 
     .form-message {
-      margin: 0 auto;
-      width: 71.6em;
+      flex-direction: column;
 
       textarea {
         @include input;
-        height: 10em;
+        height: 14em;
+        resize: none;
       }
 
       button {
-        width: inherit;
-        margin: 0;
+        font-size: 1.2em;
+        margin: 2.4em auto;
+        width: 100%;
       }
     }
   }
-
 }
