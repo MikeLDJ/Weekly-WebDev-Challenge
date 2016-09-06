@@ -1,1 +1,60 @@
 // footer styles
+
+footer {
+  height: 225px;
+
+  h2 {
+    font-family: 'Master Of Break', Georgia, serif;
+    font-size: 2.4em;
+    letter-spacing: 0;
+    margin: 1em 0 0;
+    text-transform: capitalize;
+  }
+
+  p {
+    color: darken($font-medium, 10%);
+    font-size: .8em;
+    font-weight: bold;
+    letter-spacing: .12em;
+    margin: .3em;
+    text-align: center;
+  }
+}
+
+.social {
+  @include flex(center);
+
+  * {
+    margin: 1.8em .1em;
+  }
+
+  .facebook {
+    background: url('../../images/icon-social.png') no-repeat;
+    height: 2em;
+    width: 2em;
+  }
+
+  .twitter {
+    background: url('../../images/icon-social.png') no-repeat -36px 0;
+    height: 2em;
+    width: 2em;
+  }
+
+  .linkedin {
+    background: url('../../images/icon-social.png') no-repeat -72px 0;
+    height: 2em;
+    width: 2em;
+  }
+
+  .instagram {
+    background: url('../../images/icon-social.png') no-repeat -108px 0;
+    height: 2em;
+    width: 2em;
+  }
+
+  .vimeo {
+    background: url('../../images/icon-social.png') no-repeat -144px 0;
+    height: 2em;
+    width: 2em;
+  }
+}
