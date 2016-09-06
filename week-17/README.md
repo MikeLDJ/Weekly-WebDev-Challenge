@@ -5,8 +5,7 @@ Generated on 2016-08-24 using
 
 ## Description
 
-This is an example readme file.
-Describe your site/app here.
+Weekly WebDev Challenge - week 17.
 
 ## Technologies used
 
