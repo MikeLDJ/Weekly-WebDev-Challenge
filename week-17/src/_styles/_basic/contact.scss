@@ -2,13 +2,22 @@
 
 .contact {
   @include flex(center);
-  @include img('../../images/pie.jpg', center, normal);
+  flex-direction: column;
+}
+
+.contact-form {
+  @include flex(center);
   @include button;
+  @include img('../../images/pie.jpg', center, normal);
+  align-items: center;
+  flex-direction: column;
   height: 800px;
+  margin: 0 auto;
+  width: 100%;
 
   h4 {
     color: $font-light;
-    margin: 3.6em 0 1em;
+    margin: 3.4em 0 1em;
     text-align: center;
     text-transform: capitalize;
 
@@ -21,44 +30,61 @@
     @include flex(center);
     flex-direction: column;
     width: 80.75em;
-
-    .form-data,
-    .form-message {
-      @include flex(center);
-      padding: 1.1em;
-    }
-
-    .form-data {
-      flex-direction: row;
-
-      input {
-        @include input;
-        height: 2.8em;
-        letter-spacing: normal;
-        padding: .08em 1.6em;
-        width: 100%;
-
-        &:nth-child(2) {
-          margin: 0 2.8em;
-        }
-
-      }
-    }
-
-    .form-message {
-      flex-direction: column;
-
-      textarea {
-        @include input;
-        height: 14em;
-        resize: none;
-      }
-
-      button {
-        font-size: 1.2em;
-        margin: 2.4em auto;
-        width: 100%;
-      }
-    }
   }
+}
+
+.form-data,
+.form-message {
+  @include flex(center);
+  padding: 1.1em;
+}
+
+.form-data {
+  flex-direction: row;
+
+  input {
+    @include input;
+    height: 2.8em;
+    letter-spacing: normal;
+    padding: .08em 1.6em;
+    width: 100%;
+
+    &:nth-child(2) {
+      margin: 0 2.8em;
+    }
+
+  }
+}
+
+.form-message {
+  flex-direction: column;
+
+  textarea {
+    @include input;
+    height: 14em;
+    resize: none;
+  }
+
+  button {
+    font-size: 1.2em;
+    margin: 2.4em auto;
+    width: 100%;
+  }
+}
+
+.data-email,
+.data-map,
+.data-phone {
+  background-color: red;
+  height: 270px;
+  margin: 2em 0;
+  width: 290px;
+}
+
+.contact-details {
+  @include flex(space-between);
+  align-self: center;
+  flex-direction: row;
+  height: 335px;
+  width: 940px;
 }
