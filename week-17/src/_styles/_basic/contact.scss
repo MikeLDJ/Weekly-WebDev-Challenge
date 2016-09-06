@@ -75,7 +75,6 @@
 .data-email,
 .data-map,
 .data-phone {
-  background-color: red;
   height: 270px;
   margin: 2em 0;
   width: 290px;
@@ -87,4 +86,33 @@
   flex-direction: row;
   height: 335px;
   width: 940px;
+
+  figure {
+    height: 9em;
+    margin: 0;
+    // overflow: hidden;
+    // 
+    // img {
+    //   margin: -3.5em -2em;
+    // }
+  }
+}
+
+.data-email {
+  figure {
+    @include img('../../images/bg-mail.jpg', bottom center, normal)
+
+  }
+}
+
+.data-map {
+  figure {
+    @include img('../../images/bg-map.jpg', bottom center, normal)
+  }
+}
+
+.data-phone {
+  figure {
+    @include img('../../images/bg-phone.jpg', bottom center, normal)
+  }
 }
