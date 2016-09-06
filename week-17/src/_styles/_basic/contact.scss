@@ -78,6 +78,23 @@
   height: 270px;
   margin: 2em 0;
   width: 290px;
+
+  h6,
+  p {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h6 {
+    margin: 1.8em 0 1em;
+  }
+
+  p {
+    margin: .1em;
+  }
+
 }
 
 .contact-details {
@@ -88,10 +105,11 @@
   width: 940px;
 
   figure {
+    @include flex(center);
     height: 9em;
     margin: 0;
     img {
-      margin: 16% 41%;
+      align-self: center;
     }
   }
 }
@@ -99,7 +117,6 @@
 .data-email {
   figure {
     @include img('../../images/bg-mail.jpg', bottom center, normal)
-
   }
 }
 

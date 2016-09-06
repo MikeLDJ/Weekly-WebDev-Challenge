@@ -45,18 +45,27 @@ input {
   letter-spacing: .15em;
 }
 
-h1,
-h4 {
+%header {
   color: $title;
   font-family: 'Nanami Book', Arial, sans-serif;
-  font-size: 2.5em;
   letter-spacing: normal;
   text-transform: uppercase;
+}
+
+%span {
+  font-family: 'Master Of Break', Georgia, serif;
+  text-transform: capitalize;
+}
+
+h1,
+h4 {
+  @extend %header;
+  font-size: 2.5em;
 
   span {
-    font-family: 'Master Of Break', Georgia, serif;
-    text-transform: capitalize;
+    @extend %span;
   }
+
 }
 
 h2 {
@@ -69,11 +78,12 @@ h2 {
 }
 
 h5 {
-  @extend h4;
+  @extend %header;
   font-size: 1.5em;
   text-align: center;
 
   span {
+    @extend %span;
     display: block;
   }
 }
