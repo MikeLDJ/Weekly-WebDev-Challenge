@@ -1,10 +1,10 @@
 extends _layouts/base
 
 block content
-  nav#home
+  nav#nav
     .sticky-nav
       .logo
-        a(href='#home')
+        a(href='#nav')
           img(src="images/nav-logo.png" alt="Top Food & Drink Logo")
       .nav
         each element in ['home', 'reservation', 'menu', 'blog', 'features', 'shop', 'contacts']
@@ -12,8 +12,12 @@ block content
           a(href=url)
             =element
   section#home.cover
-    img(src="images/slogan-taste-on.png" alt="Taste on Our hands")
-    h4 Wellcome
+    .owl-carousel
+      img.item(src="images/cover1.jpg" alt="Taste it")
+      img.item(src="images/cover2.jpg" alt="Taste it")
+    .slogan
+      img(src="images/slogan-taste-on.png" alt="Taste on Our hands")
+      h4 Wellcome
   aside#reservation.reservation
     h1 Wellcome to Our 
       span Top

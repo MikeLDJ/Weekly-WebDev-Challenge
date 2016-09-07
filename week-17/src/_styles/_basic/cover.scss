@@ -1,24 +1,33 @@
 // cover styles
 
 .cover {
+  @include flex(center);
+  align-content: center;
+  align-items: center;
   background-color: $background-cover;
   display: flex;
   flex-direction: column;
   height: 48.125em;
+  overflow: hidden;
 
   img {
     align-self: center;
-    margin-top: 13.4em;
-    max-width: 55em;
+    margin-top: -15%;
   }
 
+}
+
+.slogan {
+  position: absolute;
+  z-index: 1;
+
   h4 {
-    align-self: center;
     color: $font-light;
     font-size: 1.56em;
     font-weight: normal;
     letter-spacing: .15em;
     margin-top: 1.82em;
+    text-align: center;
     text-transform: uppercase;
 
     &::before,
@@ -27,4 +36,5 @@
       margin: 0 .5em;
     }
   }
+
 }
