@@ -8,7 +8,7 @@
 .contact-form {
   @include flex(center);
   @include button;
-  @include img('../../images/pie.jpg', center, normal);
+  @include img('../images/pie.jpg', center, normal);
   align-items: center;
   flex-direction: column;
   height: 800px;
@@ -114,19 +114,19 @@
 
 .data-email {
   figure {
-    @include img('../../images/bg-mail.jpg', bottom center, normal)
+    @include img('../images/bg-mail.jpg', bottom center, normal)
   }
 }
 
 .data-map {
   figure {
-    @include img('../../images/bg-map.jpg', bottom center, normal)
+    @include img('../images/bg-map.jpg', bottom center, normal)
   }
 }
 
 .data-phone {
   figure {
-    @include img('../../images/bg-phone.jpg', bottom center, normal)
+    @include img('../images/bg-phone.jpg', bottom center, normal)
   }
 }
 

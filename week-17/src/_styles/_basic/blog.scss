@@ -35,19 +35,19 @@
     width: 18.5em;
 
     &:first-child {
-      @include img('../../images/htm-bread.jpg', center, normal)
+      @include img('../images/htm-bread.jpg', center, normal)
     }
 
     &:nth-child(2) {
-      @include img('../../images/htm-burger.jpg', center, normal)
+      @include img('../images/htm-burger.jpg', center, normal)
     }
 
     &:nth-child(3) {
-      @include img('../../images/htm-breakfast.jpg', center, normal)
+      @include img('../images/htm-breakfast.jpg', center, normal)
     }
 
     &:last-child {
-      @include img('../../images/htm-pizza.jpg', center, normal)
+      @include img('../images/htm-pizza.jpg', center, normal)
     }
 
     h5 {

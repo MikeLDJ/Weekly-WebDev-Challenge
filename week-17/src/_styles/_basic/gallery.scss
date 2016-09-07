@@ -12,7 +12,7 @@
 
     .gallery-element {
       &:first-child {
-        @include img('../../images/icecream.jpg', center, 25%);
+        @include img('../images/icecream.jpg', center, 25%);
       }
 
       &:nth-child(2) {
@@ -26,7 +26,7 @@
       }
 
       &:last-child {
-        @include img('../../images/cheese-cake.jpg', center, 50%);
+        @include img('../images/cheese-cake.jpg', center, 50%);
       }
 
     }
@@ -38,11 +38,11 @@
 
     .gallery-element {
       &:first-child {
-        @include img('../../images/cookies.jpg', center, 50%);
+        @include img('../images/cookies.jpg', center, 50%);
       }
 
       &:nth-child(2) {
-        @include img('../../images/croissants.jpg', center, 25%);
+        @include img('../images/croissants.jpg', center, 25%);
 
         h2 {
           background-color: $transparent-color;
@@ -55,7 +55,7 @@
       }
 
       &:last-child {
-        @include img('../../images/burger.jpg', center, 25%);
+        @include img('../images/burger.jpg', center, 25%);
       }
     }
   }

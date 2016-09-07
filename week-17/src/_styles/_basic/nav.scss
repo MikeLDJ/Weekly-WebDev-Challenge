@@ -1,9 +1,9 @@
 // nav styles
 
 nav {
-  @include flex(center);
   background-color: $font-light;
   height: 100px;
+  margin-left: 12%;
 }
 
 .sticky-nav {

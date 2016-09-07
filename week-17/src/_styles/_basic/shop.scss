@@ -2,7 +2,7 @@
 
 .shop {
   @include flex(flex-end);
-  @include img('../../images/lemon-cake.jpg', center, 100%);
+  @include img('../images/lemon-cake.jpg', center, 100%);
   align-items: center;
   height: 50em;
 
@@ -57,7 +57,7 @@
     text-align: center;
 
     #online-sprite {
-      background: url('../../images/shop-icons.png');
+      background: url('../images/shop-icons.png');
       height: 83px;
       margin: 2em 2.8em -0.4em;
       width: 110px;
@@ -68,7 +68,7 @@
     margin: 0 1.8em;
 
     #freeship-sprite {
-      background: url('../../images/shop-icons.png') 263px;
+      background: url('../images/shop-icons.png') 263px;
       height: 83px;
       margin: 2em 0 -0.4em -0.8em;
       width: 158px;
@@ -77,7 +77,7 @@
 
   .quality {
     #quality-sprite {
-      background: url('../../images/shop-icons.png') 106px;
+      background: url('../images/shop-icons.png') 106px;
       height: 83px;
       margin: 2em 3.8em -0.4em;
       width: 106px;

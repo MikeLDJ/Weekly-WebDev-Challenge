@@ -11,7 +11,7 @@
     height: 46.875em;
 
     .menu-picture {
-      @include img('../../images/menu-picture.jpg', right, 50%);
+      @include img('../images/menu-picture.jpg', right, 50%);
     }
 
     .menu-slogan {
