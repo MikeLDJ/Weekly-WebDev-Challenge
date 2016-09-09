@@ -1,5 +1,63 @@
 // mixins
 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  20% {
+    transform: rotate(0deg) scale(.8);
+  }
+
+  40% {
+    transform: rotate(2deg) scale(1);
+  }
+
+  70% {
+    transform: rotate(-2deg) scale(1.1);
+  }
+
+  90% {
+    transform: rotate(2deg) scale(1.05);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes wow {
+  94% {
+    transform: scale(1);
+  }
+
+  95% {
+    transform: scale(.9);
+  }
+
+  97% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes button {
+  0% {
+    background-color: $button;
+  }
+
+  5% {
+    background-color: $title;
+  }
+
+  10% {
+    background-color: $button;
+  }
+}
+
 @mixin flex($position) {
   display: flex;
   justify-content: $position;
@@ -7,15 +65,23 @@
 
 @mixin button {
   button {
+    animation: button 5s linear infinite;
     background-color: $button;
     border: 0;
+    box-shadow: 0;
     color: $font-btn;
     font-family: 'Nanami Book', Arial, sans-serif;
     height: 60px;
     letter-spacing: .1em;
     margin: 1.6em;
     text-transform: uppercase;
+    transition: box-shadow .2s ease-in-out;
     width: 240px;
+
+    &:hover {
+      animation: shake .3s linear;
+      box-shadow: 0 0 1em 0 rgba(0, 0, 0, .4);
+    }
   }
 }
 
@@ -48,4 +114,11 @@
   border: 1px solid $font-light;
   color: $font-light;
   font-size: 1.125em;
+  transition: background-color .2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, .6);
+    outline: none;
+  }
 }

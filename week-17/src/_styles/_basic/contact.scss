@@ -114,50 +114,63 @@
 
 .data-email {
   figure {
-    @include img('../images/bg-mail.jpg', bottom center, normal)
+    @include img('../images/bg-mail.jpg', bottom center, normal);
   }
 }
 
 .data-map {
   figure {
-    @include img('../images/bg-map.jpg', bottom center, normal)
+    @include img('../images/bg-map.jpg', bottom center, normal);
   }
 }
 
 .data-phone {
   figure {
-    @include img('../images/bg-phone.jpg', bottom center, normal)
+    @include img('../images/bg-phone.jpg', bottom center, normal);
   }
 }
 
 .contact-map {
-  @include flex(center);
   background-color: $link;
+  display: flex;
+  flex-direction: column;
   height: 550px;
+  position: relative;
 
   iframe {
     height: 100%;
     opacity: .5;
     transition: opacity .3s ease-in-out;
     width: 100%;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 
   h5 {
-    align-self: center;
     color: $font-light;
     font-size: 1.3em;
+    left: 50%;
     letter-spacing: .1em;
     margin: 0;
     padding-top: .5em;
     position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
     span {
+      background-color: $font-blog;
+      border-radius: 50%;
       display: inline;
-      margin: .8em;
+      margin: .2em;
+      padding: .6em .4em .3em .8em;
+    }
+  }
+
+  &:hover {
+    iframe {
+      opacity: 1;
+    }
+
+    h5 {
+      display: none;
     }
   }
 }

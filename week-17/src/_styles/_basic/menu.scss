@@ -26,7 +26,7 @@
 
       h2 {
         font-size: 2.82em;
-        margin: -0.7em 0 .1em;
+        margin: -.7em 0 .1em;
         padding: 0 4em;
       }
 
@@ -56,7 +56,7 @@
     @include container;
 
     h4 {
-      margin: .35em 0 .5em -0.3em;
+      margin: .35em 0 .5em -.3em;
 
       span {
         margin-left: .35em;

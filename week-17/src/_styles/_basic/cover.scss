@@ -2,23 +2,21 @@
 
 .cover {
   @include flex(center);
-  align-content: center;
-  align-items: center;
-  background-color: $background-cover;
   display: flex;
   flex-direction: column;
   height: 48.125em;
   overflow: hidden;
+  position: relative;
 
   img {
-    align-self: center;
-    margin-top: -15%;
+    margin-top: -10%;
   }
-
 }
 
 .slogan {
+  left: 28%;
   position: absolute;
+  top: 38%;
   z-index: 1;
 
   h4 {
@@ -29,6 +27,7 @@
     margin-top: 1.82em;
     text-align: center;
     text-transform: uppercase;
+    z-index: 10;
 
     &::before,
     &::after {

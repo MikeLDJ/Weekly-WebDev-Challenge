@@ -35,6 +35,11 @@
       margin-left: 3em;
       padding: 1em 2em;
       text-transform: uppercase;
+
+      &:hover {
+        animation: shake .3s linear;
+        box-shadow: 0 0 1em 0 $transparent-contrast;
+      }
     }
   }
 }
@@ -57,9 +62,10 @@
     text-align: center;
 
     #online-sprite {
+      animation: wow 8s linear infinite;
       background: url('../images/shop-icons.png');
       height: 83px;
-      margin: 2em 2.8em -0.4em;
+      margin: 2em 2.8em -.4em;
       width: 110px;
     }
   }
@@ -68,18 +74,20 @@
     margin: 0 1.8em;
 
     #freeship-sprite {
+      animation: wow 6.5s linear infinite;
       background: url('../images/shop-icons.png') 263px;
       height: 83px;
-      margin: 2em 0 -0.4em -0.8em;
+      margin: 2em 0 -.4em -.8em;
       width: 158px;
     }
   }
 
   .quality {
     #quality-sprite {
+      animation: wow 5s linear infinite;
       background: url('../images/shop-icons.png') 106px;
       height: 83px;
-      margin: 2em 3.8em -0.4em;
+      margin: 2em 3.8em -.4em;
       width: 106px;
     }
   }

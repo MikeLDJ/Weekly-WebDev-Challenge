@@ -5,60 +5,59 @@
   background-color: $background-menu;
   flex-direction: column;
   height: 54.875em;
+}
 
-  .gallery-up {
-    @include flex(center);
-    flex-basis: 50%;
+.gallery-up {
+  @include flex(center);
+  flex-basis: 50%;
 
-    .gallery-element {
-      &:first-child {
-        @include img('../images/icecream.jpg', center, 25%);
-      }
-
-      &:nth-child(2) {
-        align-self: center;
-        flex-basis: 25%;
-
-        h2 {
-          letter-spacing: .3em;
-          margin-bottom: 1.1em;
-        }
-      }
-
-      &:last-child {
-        @include img('../images/cheese-cake.jpg', center, 50%);
-      }
-
+  .gallery-element {
+    &:first-child {
+      @include img('../images/icecream.jpg', center, 25%);
     }
-  }
 
-  .gallery-down {
-    @include flex(center);
-    flex-basis: 50%;
+    &:nth-child(2) {
+      align-self: center;
+      flex-basis: 25%;
 
-    .gallery-element {
-      &:first-child {
-        @include img('../images/cookies.jpg', center, 50%);
-      }
-
-      &:nth-child(2) {
-        @include img('../images/croissants.jpg', center, 25%);
-
-        h2 {
-          background-color: $transparent-color;
-          color: $font-light;
-          height: 40%;
-          letter-spacing: .01em;
-          margin: 10%;
-          padding: 1.8em 0;
-        }
-      }
-
-      &:last-child {
-        @include img('../images/burger.jpg', center, 25%);
+      h2 {
+        animation: wow 7s linear infinite;
+        letter-spacing: .3em;
+        margin-bottom: 1.1em;
       }
     }
+
+    &:last-child {
+      @include img('../images/cheese-cake.jpg', center, 50%);
+    }
   }
+}
 
+.gallery-down {
+  @include flex(center);
+  flex-basis: 50%;
 
+  .gallery-element {
+    &:first-child {
+      @include img('../images/cookies.jpg', center, 50%);
+    }
+
+    &:nth-child(2) {
+      @include img('../images/croissants.jpg', center, 25%);
+
+      h2 {
+        animation: wow 5s linear infinite;
+        background-color: $transparent-color;
+        color: $font-light;
+        height: 40%;
+        letter-spacing: .01em;
+        margin: 10%;
+        padding: 1.8em 0;
+      }
+    }
+
+    &:last-child {
+      @include img('../images/burger.jpg', center, 25%);
+    }
+  }
 }
