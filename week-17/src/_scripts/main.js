@@ -33,10 +33,10 @@ var jQuery = require('jquery');
 
 (function () {
   var jq = jQuery.noConflict(true);
-  if (window.$ == undefined) {
+  if (window.$ === undefined) {
     window.$ = jq;
   }
-  if (window.jQuery == undefined) {
+  if (window.jQuery === undefined) {
     window.jQuery = jq;
   }
 })();

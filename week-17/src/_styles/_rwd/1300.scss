@@ -1,0 +1,126 @@
+//  media queries 1300
+
+@media (max-width: 1300px) {
+
+  // cover
+
+  .cover {
+    height: 37.5em;
+  }
+
+  .slogan {
+    left: 20%;
+  }
+
+  // reservation
+
+  .reservation {
+    height: 30em;
+  }
+
+  // menu
+
+  .special-moment {
+    height: 37.5em;
+  }
+
+  .menu-slogan {
+    .container {
+      width: 50vw;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      margin: .1em;
+      padding: 0 3em;
+    }
+  }
+
+  .menu-full {
+    height: 30em;
+
+    h4 {
+      margin: .5em;
+    }
+  }
+
+  // shop
+
+  .shop {
+    height: 37.5em;
+  }
+
+  .promo {
+    img {
+      height: 10em;
+      margin: .4em;
+    }
+
+    .price {
+      font-size: 3em;
+    }
+
+    button {
+      font-size: 1em;
+    }
+  }
+
+  .shopping {
+    width: 75vw;
+
+    p {
+      font-size: 1.5em;
+    }
+  }
+
+  // gallery
+
+  .features {
+    height: 37.5em;
+  }
+
+  .gallery-up {
+    h2 {
+      font-size: 2.6em;
+    }
+  }
+
+  .gallery-down {
+    h2 {
+      font-size: 2.6em;
+      height: 30%;
+    }
+  }
+
+  // blog
+
+  .blog {
+    align-items: center;
+    height: auto;
+  }
+
+  .blog-info {
+    height: 22em;
+    padding-bottom: 3em;
+  }
+
+  .blog-promo {
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    max-height: 50em;
+    padding-bottom: 0;
+    width: 60vw;
+  }
+
+  .view-promo {
+    margin: 0 .5em 3em;
+    width: 18.5em;
+  }
+
+  .form-data,
+  .form-message {
+    align-self: center;
+    width: 85%;
+  }
+}

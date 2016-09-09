@@ -1,0 +1,26 @@
+//  media queries 1500
+
+@media (max-width: 1500px) {
+  nav {
+    height: 60px;
+  }
+
+  .sticky-nav {
+    width: 75vw;
+
+    .nav-logo {
+      img {
+        height: 3em;
+        padding: .5em;
+      }
+    }
+
+    .nav-elements {
+      a {
+        font-size: 1em;
+        letter-spacing: .15em;
+        padding-top: .8em;
+      }
+    }
+  }
+}

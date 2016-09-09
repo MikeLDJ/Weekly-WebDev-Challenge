@@ -3,64 +3,64 @@
 .menu {
   @include flex(center);
   flex-direction: column;
+}
 
-  .special-moment {
-    background-color: $background-menu;
-    display: flex;
-    flex-direction: row;
-    height: 46.875em;
+.special-moment {
+  background-color: $background-menu;
+  display: flex;
+  flex-direction: row;
+  height: 46.875em;
 
-    .menu-picture {
-      @include img('../images/menu-picture.jpg', right, 50%);
-    }
+  .menu-picture {
+    @include img('../images/menu-picture.jpg', right, 50%);
+  }
+}
 
-    .menu-slogan {
-      @include flex(center);
-      flex-basis: 50%;
-      flex-direction: column;
-      text-align: center;
+.menu-slogan {
+  @include flex(center);
+  flex-basis: 50%;
+  flex-direction: column;
+  text-align: center;
 
-      .container {
-        width: 46.875em;
-      }
-
-      h2 {
-        font-size: 2.82em;
-        margin: -.7em 0 .1em;
-        padding: 0 4em;
-      }
-
-      img {
-        margin: 1.2em 0;
-
-      }
-
-      p {
-        font-size: 1.125em;
-        letter-spacing: .095em;
-        margin: 0 6em;
-        text-align: justify;
-
-        &:nth-child(3) {
-          text-align: center;
-        }
-
-        &:last-child {
-          text-align: center;
-        }
-      }
-    }
+  .container {
+    width: 46.875em;
   }
 
-  .menu-full {
-    @include container;
+  h2 {
+    font-size: 2.82em;
+    margin: -.7em 0 .1em;
+    padding: 0 4em;
+  }
 
-    h4 {
-      margin: .35em 0 .5em -.3em;
+  img {
+    margin: 1.2em 0;
 
-      span {
-        margin-left: .35em;
-      }
+  }
+
+  p {
+    font-size: 1.125em;
+    letter-spacing: .095em;
+    margin: 0 6em;
+    text-align: justify;
+
+    &:nth-child(3) {
+      text-align: center;
+    }
+
+    &:last-child {
+      text-align: center;
+    }
+  }
+}
+
+.menu-full {
+  @include container;
+
+  h4 {
+    margin: .35em 0 .5em -.3em;
+
+    span {
+      margin-left: .35em;
     }
   }
 }

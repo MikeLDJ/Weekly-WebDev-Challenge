@@ -5,41 +5,41 @@
   @include img('../images/lemon-cake.jpg', center, 100%);
   align-items: center;
   height: 50em;
+}
 
-  .promo {
-    flex-basis: 50%;
+.promo {
+  flex-basis: 50%;
 
-    img {
-      margin: -3.3em 0 3.5em .4em;
-    }
+  img {
+    margin: -3.3em 0 3.5em .4em;
+  }
 
-    p {
-      color: $font-light;
-      font-size: 1.125em;
-      margin: 0 3em;
-      width: 500px;
-    }
+  p {
+    color: $font-light;
+    font-size: 1.125em;
+    margin: 0 3em;
+    width: 500px;
+  }
 
-    .price {
-      font-family: 'Master Of Break', Georgia, serif;
-      font-size: 3.125em;
-      margin: .7em 1em;
-    }
+  .price {
+    font-family: 'Master Of Break', Georgia, serif;
+    font-size: 3.125em;
+    margin: .7em 1em;
+  }
 
-    button {
-      background-color: transparent;
-      border: 1px solid $font-light;
-      color: $font-light;
-      font-family: 'Nanami Book', Arial, sans-serif;
-      font-size: 1.125em;
-      margin-left: 3em;
-      padding: 1em 2em;
-      text-transform: uppercase;
+  button {
+    background-color: transparent;
+    border: 1px solid $font-light;
+    color: $font-light;
+    font-family: 'Nanami Book', Arial, sans-serif;
+    font-size: 1.125em;
+    margin-left: 3em;
+    padding: 1em 2em;
+    text-transform: uppercase;
 
-      &:hover {
-        animation: shake .3s linear;
-        box-shadow: 0 0 1em 0 $transparent-contrast;
-      }
+    &:hover {
+      animation: shake .3s linear;
+      box-shadow: 0 0 1em 0 $transparent-contrast;
     }
   }
 }
@@ -56,47 +56,47 @@
     font-size: 1.875em;
     text-align: center;
   }
+}
 
-  .online {
-    align-self: center;
-    text-align: center;
+.online {
+  align-self: center;
+  text-align: center;
 
-    #online-sprite {
-      animation: wow 3s linear infinite;
-      background: url('../images/shop-icons.png');
-      height: 83px;
-      margin: 2em 2.8em -.4em;
-      width: 110px;
-    }
+  #online-sprite {
+    animation: wow 3s linear infinite;
+    background: url('../images/shop-icons.png');
+    height: 83px;
+    margin: 2em 2.8em -.4em;
+    width: 110px;
   }
+}
 
-  .freeship {
-    margin: 0 1.8em;
+.freeship {
+  margin: 0 1.8em;
 
-    #freeship-sprite {
-      animation: wow 3s linear infinite;
-      animation-delay: .1s;
-      background: url('../images/shop-icons.png') 263px;
-      height: 83px;
-      margin: 2em 0 -.4em -.8em;
-      width: 158px;
-    }
+  #freeship-sprite {
+    animation: wow 3s linear infinite;
+    animation-delay: .1s;
+    background: url('../images/shop-icons.png') 263px;
+    height: 83px;
+    margin: 2em 0 -.4em -.8em;
+    width: 158px;
   }
+}
 
-  .quality {
-    #quality-sprite {
-      animation: wow 3s linear infinite;
-      animation-delay: .2s;
-      background: url('../images/shop-icons.png') 106px;
-      height: 83px;
-      margin: 2em 3.8em -.4em;
-      width: 106px;
-    }
+.quality {
+  #quality-sprite {
+    animation: wow 3s linear infinite;
+    animation-delay: .2s;
+    background: url('../images/shop-icons.png') 106px;
+    height: 83px;
+    margin: 2em 3.8em -.4em;
+    width: 106px;
   }
+}
 
-  .pipe {
-    background-color: $pipe;
-    height: 6.5625em;
-    width: .125em;
-  }
+.pipe {
+  background-color: $pipe;
+  height: 6.5625em;
+  width: .125em;
 }

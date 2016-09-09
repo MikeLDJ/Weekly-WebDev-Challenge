@@ -2,7 +2,12 @@
 
 @keyframes shake {
   0% {
-    transform: rotate(0deg) scale(1);
+    backface-visibility: hidden;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    // translateZ(0) - reason:
+    // 3D animation enables on mobiles hardware acceleration
+    // http://webdesign.tutsplus.com/tutorials/css3-animations-the-hiccups-and-bugs-youll-want-to-avoid--webdesign-4867
+    // backface-visibility: hidden; - reason: Fighting the Flash
   }
 
   20% {
@@ -28,7 +33,7 @@
 
 @keyframes wow {
   88% {
-    transform: scale(1);
+    transform: scale(1) translateZ(0);
   }
 
   90% {
@@ -45,16 +50,26 @@
 }
 
 @keyframes button {
-  0% {
+  90% {
     background-color: $button;
+    transform: translateZ(0);
   }
 
-  5% {
+  95% {
     background-color: $title;
   }
 
-  10% {
+  100% {
     background-color: $button;
+  }
+}
+
+@keyframes reveal-btn {
+  100% {
+    height: 9em;
+    margin-left: -31%;
+    transition: height .1s linear, margin .1s linear, width .1s linear;
+    width: 20em;
   }
 }
 
