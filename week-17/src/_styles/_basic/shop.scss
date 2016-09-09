@@ -62,7 +62,7 @@
     text-align: center;
 
     #online-sprite {
-      animation: wow 8s linear infinite;
+      animation: wow 3s linear infinite;
       background: url('../images/shop-icons.png');
       height: 83px;
       margin: 2em 2.8em -.4em;
@@ -74,7 +74,8 @@
     margin: 0 1.8em;
 
     #freeship-sprite {
-      animation: wow 6.5s linear infinite;
+      animation: wow 3s linear infinite;
+      animation-delay: .1s;
       background: url('../images/shop-icons.png') 263px;
       height: 83px;
       margin: 2em 0 -.4em -.8em;
@@ -84,7 +85,8 @@
 
   .quality {
     #quality-sprite {
-      animation: wow 5s linear infinite;
+      animation: wow 3s linear infinite;
+      animation-delay: .2s;
       background: url('../images/shop-icons.png') 106px;
       height: 83px;
       margin: 2em 3.8em -.4em;

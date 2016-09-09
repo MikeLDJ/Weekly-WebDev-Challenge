@@ -1,20 +1,24 @@
 // nav styles
 
 nav {
-  background-color: $font-light;
   height: 100px;
-  margin-left: 13%;
+}
+
+.nav-wrapper {
+  background-color: $font-light;
+  display: block;
+  padding-left: 13%;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .sticky-nav {
   @include flex(center);
   align-items: center;
-  max-width: 80em;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
+  width: 80em;
 
-  .logo {
+  .nav-logo {
     flex-grow: 2;
 
     img {
@@ -22,7 +26,7 @@ nav {
     }
   }
 
-  .nav {
+  .nav-elements {
     @include flex(space-between);
     flex-grow: 3;
     flex-wrap: nowrap;
@@ -36,6 +40,7 @@ nav {
       padding-top: 1.8em;
       text-decoration: none;
       text-transform: uppercase;
+      width: auto;
     }
   }
 }

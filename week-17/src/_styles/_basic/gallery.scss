@@ -21,7 +21,7 @@
       flex-basis: 25%;
 
       h2 {
-        animation: wow 7s linear infinite;
+        animation: wow 5s linear infinite;
         letter-spacing: .3em;
         margin-bottom: 1.1em;
       }
@@ -46,7 +46,7 @@
       @include img('../images/croissants.jpg', center, 25%);
 
       h2 {
-        animation: wow 5s linear infinite;
+        animation: wow 4s linear infinite;
         background-color: $transparent-color;
         color: $font-light;
         height: 40%;

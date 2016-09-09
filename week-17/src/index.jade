@@ -2,15 +2,16 @@ extends _layouts/base
 
 block content
   nav#nav
-    .sticky-nav
-      .logo
-        a(href='#nav')
-          img(src="images/nav-logo.png" alt="Top Food & Drink Logo")
-      .nav
-        each element in ['home', 'reservation', 'menu', 'blog', 'features', 'shop', 'contacts']
-          - url= "#" + element
-          a(href=url)
-            =element
+    .nav-wrapper
+      .sticky-nav
+        .nav-logo
+          a(href='#nav')
+            img(src="images/nav-logo.png" alt="Top Food & Drink Logo")
+        .nav-elements
+          each element in ['home', 'reservation', 'menu', 'blog', 'features', 'shop', 'contacts']
+            - url= "#" + element
+            a(href=url)
+              =element
   section#home.cover
     .owl-carousel
       img.item(src="images/cover1.jpg" alt="Taste it")
