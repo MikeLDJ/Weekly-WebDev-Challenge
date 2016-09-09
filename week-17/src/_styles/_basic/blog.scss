@@ -28,7 +28,6 @@
   @include flex(center);
   padding-bottom: 10em;
 
-
   .view-promo {
     @include button;
     height: 21.875em;
@@ -36,7 +35,6 @@
     overflow: hidden;
     transition: transform .3s ease-in-out;
     width: 18.5em;
-
 
     &:first-child {
       @include img('../images/htm-bread.jpg', center, normal);

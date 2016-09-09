@@ -25,36 +25,33 @@ footer {
   @include flex(center);
 
   * {
+    height: 2em;
     margin: 1.8em .1em;
+    width: 2em;
+
+    a {
+      margin: 0;
+    }
   }
 
   .facebook {
     background: url('../images/icon-social.png') no-repeat;
-    height: 2em;
     width: 2em;
   }
 
   .twitter {
     background: url('../images/icon-social.png') no-repeat -36px 0;
-    height: 2em;
-    width: 2em;
   }
 
   .linkedin {
     background: url('../images/icon-social.png') no-repeat -72px 0;
-    height: 2em;
-    width: 2em;
   }
 
   .instagram {
     background: url('../images/icon-social.png') no-repeat -108px 0;
-    height: 2em;
-    width: 2em;
   }
 
   .vimeo {
     background: url('../images/icon-social.png') no-repeat -144px 0;
-    height: 2em;
-    width: 2em;
   }
 }
