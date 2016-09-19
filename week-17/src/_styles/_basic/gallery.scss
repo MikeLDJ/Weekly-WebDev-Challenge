@@ -43,16 +43,19 @@
     }
 
     &:nth-child(2) {
+      @include flex(center);
       @include img('../images/croissants.jpg', center, 25%);
+      align-items: center;
 
       h2 {
         animation: wow 4s linear infinite;
         background-color: $transparent-color;
+        box-sizing: border-box;
         color: $font-light;
-        height: 40%;
+        height: 90%;
         letter-spacing: .01em;
         margin: 10%;
-        padding: 1.8em 0;
+        padding-top: 2em;
       }
     }
 

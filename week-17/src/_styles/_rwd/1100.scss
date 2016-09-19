@@ -2,23 +2,176 @@
 
 @media (max-width: 1100px) {
 
+  // nav
+
+  .nav-wrapper {
+    padding-left: 1em;
+  }
+
+  .sticky-nav {
+    width: 95%;
+  }
+
   // cover
 
+  .cover {
+    height: 55vw;
+    img {
+      width: 70vw;
+    }
+  }
+
   .slogan {
-    left: 12%;
+    left: 15%;
+
+    h4 {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+
+
+  .reservation,
+  .menu-full,
+  .blog-info {
+    p {
+      font-size: 1.2em;
+      box-sizing: padding-box;
+      padding: 0 .5em;
+      width: 100%;
+    }
+  }
+
+  // menu
+
+  .special-moment {
+    height: 26em;
+  }
+
+  .menu-slogan {
+    .container {
+      * {
+        margin: 0;
+        padding: 0 1em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: .8em;
+        text-align: center;
+      }
+    }
+  }
+
+  // shop
+
+  .shop {
+    @include img('../images/lemon-cake.jpg', -100px, 100%);
+  }
+
+  // gallery
+  .features {
+    height: 35em;
+  }
+
+  .gallery-element {
+    &:nth-child(2) {
+      h2 {
+        font-size: 2em;
+        margin: 5%;
+      }
+    }
+  }
+
+  .gallery-up {
+    .gallery-element {
+      &:first-child {
+        @include img('../images/icecream.jpg', center, 33.33%);
+      }
+
+      &:nth-child(2) {
+        flex-basis: 33.33%;
+      }
+
+      &:last-child {
+        @include img('../images/cheese-cake.jpg', center, 33.33%);
+      }
+    }
+  }
+
+  .gallery-down {
+    .gallery-element {
+      &:first-child {
+        @include img('../images/cookies.jpg', center, 33.33%);
+      }
+
+      &:nth-child(2) {
+        @include img('../images/croissants.jpg', center, 33.33%);
+
+        h2 {
+          padding: 2em;
+        }
+      }
+
+      &:last-child {
+        @include img('../images/burger.jpg', center, 33.33%);
+      }
+    }
+  }
+
+  // blog
+
+  .blog {
+    padding: 0;
+  }
+
+  .blog-info {
+    height: auto;
+  }
+
+  .blog-promo {
+    width: 82vw;
   }
 
   // contact
 
+  .contact-form {
+    h4 {
+      margin: 1em 0;
+    }
+
+    form {
+      width: 100%;
+    }
+  }
+
   .form-data,
   .form-message {
-    width: 900px;
     flex-direction: column;
-    margin: 0 !important;
+    margin: 0;
     padding: 0;
+    width: 90%;;
 
     input {
-      margin: .5em;
+      box-sizing: border-box;
+      margin: .5em 0;
+
+      &:nth-child(2) {
+        margin: 0;
+      }
     }
+  }
+
+  .contact-details {
+    width: 96vw;
+  }
+
+  .data-email,
+  .data-map,
+  .data-phone {
+    width: 27vw;
   }
 }

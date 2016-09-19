@@ -27,6 +27,7 @@
 .blog-promo {
   @include flex(center);
   padding-bottom: 10em;
+  flex-wrap: wrap;
 }
 
 .view-promo {
