@@ -1,0 +1,161 @@
+//  media queries 768
+
+@media (max-width: 768px) {
+  // cover
+
+  .cover {
+    .slogan {
+      left: 5%;
+
+      img {
+        width: 95%;
+      }
+    }
+
+    h4 {
+      font-size: 1em;
+    }
+  }
+
+  // reservation
+
+  .reservation {
+    h1 {
+      font-size: 1.6em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  // menu
+
+  .special-moment {
+    flex-direction: column;
+    height: 46em;
+  }
+
+  .menu-slogan {
+
+    .container {
+      width: auto;
+
+      h2 {
+        font-size: 1.4em;
+        margin: 1em;
+      }
+
+      p {
+        &:last-child {
+          padding-bottom: 2em;
+        }
+      }
+    }
+  }
+
+  .menu-full {
+    h4 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  // shop
+
+  .promo {
+    margin: 0;
+    width: 100%;
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      height: 8em;
+    }
+
+    p {
+      font-size: 1em;
+      width: 80%;
+    }
+  }
+
+  .shopping {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .pipe {
+    height: .125em;
+    width: 12em;
+  }
+
+  // gallery
+
+  .features {
+    height: 120em;
+  }
+
+  .gallery-up,
+  .gallery-down {
+    flex-direction: column;
+
+    .gallery-element {
+
+      h2 {
+        font-size: 3em;
+        margin-top: 2em;
+      }
+    }
+  }
+
+  // blog
+
+  .blog {
+    justify-content: space-between;
+    max-height: 120em;
+  }
+
+  .blog-info {
+    height: 16em;
+
+    h4 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .blog-promo {
+    align-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  // contact
+
+  .contact-details {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .data-email,
+  .data-map,
+  .data-phone {
+    align-self: center;
+    width: 16em;
+  }
+}
+
+@media (max-width: 623px) {
+  .blog {
+    height: 120em;
+  }
+}
