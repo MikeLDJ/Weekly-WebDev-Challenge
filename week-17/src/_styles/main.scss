@@ -1,6 +1,7 @@
 // Ext Styles
 @import 'node_modules/normalize.css/normalize';
 @import 'node_modules/owl.carousel/dist/assets/owl.carousel';
+@import 'node_modules/slicknav/scss/slicknav';
 
 // Import Tools
 @import '_tools/color';
@@ -11,21 +12,21 @@
 @import '_modules/browsehappy';
 
 // Import Basic
-@import '_basic/nav';
-@import '_basic/cover';
-@import '_basic/reservation';
-@import '_basic/menu';
-@import '_basic/shop';
-@import '_basic/gallery';
-@import '_basic/blog';
-@import '_basic/contact';
-@import '_basic/footer';
+// @import '_basic/nav';
+// @import '_basic/cover';
+// @import '_basic/reservation';
+// @import '_basic/menu';
+// @import '_basic/shop';
+// @import '_basic/gallery';
+// @import '_basic/blog';
+// @import '_basic/contact';
+// @import '_basic/footer';
 
 // Import Media Queries
-@import '_rwd/1500';
-@import '_rwd/1300';
-@import '_rwd/1100';
-@import '_rwd/768';
+// @import '_rwd/1500';
+// @import '_rwd/1300';
+// @import '_rwd/1100';
+// @import '_rwd/768';
 
 
 

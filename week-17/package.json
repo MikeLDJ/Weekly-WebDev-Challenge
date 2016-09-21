@@ -4,7 +4,8 @@
   "dependencies": {
     "jquery": "~2.2.0",
     "normalize.css": "~3.0.3",
-    "owl.carousel": "^2.1.4"
+    "owl.carousel": "^2.1.4",
+    "slicknav": "^1.0.8"
   },
   "devDependencies": {
     "autoprefixer": "~6.3.1",
@@ -75,12 +76,19 @@
       "css": "main**.{sass,scss}"
     },
     "browserify": {
-      "transform": [ "browserify-shim" ]
+      "transform": [
+        "browserify-shim"
+      ]
     },
     "browser": {
+      "slicknav": "./node_modules/slicknav/jquery.slicknav.js",
       "owl.carousel": "./node_modules/owl.carousel/owl.carousel.js"
     },
     "browserify-shim": {
+      "slicknav": {
+        "exports": null,
+        "depends": "jquery:$"
+      },
       "owl.carousel": {
         "exports": null,
         "depends": "jquery:$"
