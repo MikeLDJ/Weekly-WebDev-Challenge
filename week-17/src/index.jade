@@ -1,21 +1,25 @@
 extends _layouts/base
 
 block content
-  nav#nav(role="navigation")
-    .nav-wrapper
-      .sticky-nav
-        .nav-logo
-          a(href='#nav')
-            img(src="images/nav-logo.png" alt="Top Food & Drink Logo")
-        .nav-elements
-          each element in ['home', 'reservation', 'menu', 'blog', 'features', 'shop', 'contacts']
-            - url= "#" + element
-            a(href=url)
-              =element
+  header
+    nav#nav(role="navigation")
+      .nav-logo
+        a(href="#nav")
+          img(src="images/nav-logo.png" alt="Top Food & Drink Logo")
+      .nav-elements.main-nav
+        .container
+          ul
+            li.mobile-button
+              a(href="#") Menu
+            each element in ['home', 'reservation', 'menu', 'blog', 'features', 'shop', 'contacts']
+              - url= "#" + element
+              li
+                a(href=url)
+                  =element
   section#home.cover
     .owl-carousel
-      img.item(src="images/cover1.jpg" alt="Taste it")
-      img.item(src="images/cover2.jpg" alt="Taste it")
+      //- img.item(src="images/cover1.jpg" alt="Taste it")
+      //- img.item(src="images/cover2.jpg" alt="Taste it")
     .slogan
       img(src="images/slogan-taste-on.png" alt="Taste on Our hands")
       h4 Wellcome

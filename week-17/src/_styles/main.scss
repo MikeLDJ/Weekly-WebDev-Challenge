@@ -43,5 +43,7 @@ body {
 
 //Debug
 * {
-  // border: 1px solid red;
+  border: 1px solid red;
+  box-sizing: border-box;
+  transition: all 1s ease; // just for fun with resizing window
 }

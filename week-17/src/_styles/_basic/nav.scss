@@ -44,3 +44,85 @@ nav {
     }
   }
 }
+
+//Color definitions
+$lightblue: #D7F7FE;
+$darkblue: #1A577F;
+$medblue: #1F729C;
+$salmon: #FF6067;
+$hellayellow: #F7EE1A;
+
+//Typography
+$base-font-size: 16px;
+$base-font-family: 'Nunito', sans-serif;
+$heading-font-family: 'Righteous', sans-serif;
+
+
+.main-nav {
+  background: $hellayellow;
+  color: white;
+  //transition: none;
+  position: fixed;
+  width: 100%;
+  a {
+    color: $darkblue;
+    text-decoration: none;
+  }
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    a {
+      padding: em(15px) em(35px);
+      display: flex;
+      text-transform: uppercase;
+      &:hover, &:focus {
+        background: lighten($hellayellow, 25%);
+        color: lighten($darkblue, 25%);
+      }
+    }
+    .mobile-button a {
+      position: absolute;
+      left: -99999em;
+    }
+  }
+
+  @media (max-width: 700px) {
+    ul {
+      flex-wrap: wrap;
+       justify-content: flex-start;
+      a {
+        position: absolute;
+        left: -99999em;
+      }
+      &.open {
+        li {
+          width: 100%;
+          &.mobile-button a {
+          	background: tint($hellayellow, 50%);
+          	color: darken($medblue, 20%);
+          }
+        }
+        a {
+          position: static;
+
+        }
+      }
+      .mobile-button {
+        a {
+          position: static;
+        }
+      }
+    }
+    a {
+      width: 100%;
+    }
+  }
+}

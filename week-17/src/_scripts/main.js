@@ -55,3 +55,16 @@ $(document).ready(function(){
     pagination: false
   });
 });
+
+// --- Mobile Navigation Menu ---
+
+$(document).ready(function() {
+  $('a').click(function(e) {
+    // if( $(e.target).attr('class') !== 'mobile-button') {
+    //   $(this).parent().parent().toggleClass('open');
+    // }
+  	$(this).parent().parent().toggleClass('open');
+    // $(this).html($(this).html() == 'Close Menu' ? 'Menu' : 'Close Menu');
+    e.preventDefault();
+  });
+});
