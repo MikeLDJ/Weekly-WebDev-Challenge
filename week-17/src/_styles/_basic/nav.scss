@@ -1,46 +1,83 @@
 // nav styles
 
-nav {
-  height: 100px;
+header {
+  height: 6.2em;
 }
 
 .nav-wrapper {
   background-color: $font-light;
-  height: inherit;
-  padding-left: 13%;
+  height: 6.2em;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 1;
 }
 
-.sticky-nav {
+nav {
   @include flex(center);
-  align-items: center;
-  width: 80em;
+  margin: 1.4em 11.8vw;
+}
 
-  .nav-logo {
-    flex-grow: 2;
+.nav-logo {
+  margin: 0 9.5vw 0 1.5vw;
+}
+
+.nav-main {
+  display: flex;
+
+  a {
+    align-self: center;
+    color: $link;
+    font-size: 1.1em;
+    padding-top: .9em;
+    text-decoration: none;
+  }
+
+  ul {
+    @include flex(space-between);
+  }
+
+  li {
+    display: flex;
+    font-weight: bold;
+    letter-spacing: .1.6em;
+    list-style: none;
+    margin: 0 1.9vw;
+    text-transform: uppercase;
+  }
+
+  .mobile-button {
+    left: -9999em;
+    position: absolute;
+  }
+}
+
+// media queries
+
+@media (max-width: 1100px) {
+  header,
+  .nav-wrapper {
+    height: 4em;
+  }
+
+  nav {
+    margin: .5em 0;
 
     img {
-      padding-top: 1.4em;
+      height: 3em;
     }
   }
 
-  .nav-elements {
-    @include flex(space-between);
-    flex-grow: 3;
-    flex-wrap: nowrap;
-
+  .nav-main {
     a {
-      color: $link;
-      font-size: 1.1em;
-      font-weight: bold;
-      letter-spacing: .2em;
-      list-style: none;
-      padding-top: 1.8em;
-      text-decoration: none;
-      text-transform: uppercase;
-      width: auto;
+      font-size: .9em;
+    }
+
+    li {
+      letter-spacing: normal;
     }
   }
+}
+
+@media (max-width: 800px) {
+  // todo
 }

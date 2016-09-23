@@ -22,7 +22,6 @@
 @import '_basic/footer';
 
 // Import Media Queries
-@import '_rwd/1500';
 @import '_rwd/1300';
 @import '_rwd/1100';
 @import '_rwd/768';
@@ -31,17 +30,14 @@
 
 //General
 
-a {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  // font-size: 14px;
+* {
+  box-sizing: border-box;
+  transition: all 1s ease; // just for fun with resizing window
 }
 
 //Debug
+
 * {
   // border: 1px solid red;
+  // background-color: grey;
 }
