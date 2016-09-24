@@ -56,7 +56,7 @@
 
   h5 {
     background-color: $font-light;
-    border-radius: 0 0 12.83em 12.83em;
+    border-radius: 0 0 10em 10em;
     color: $pipe;
     height: 5em;
     margin: 0 0 0 -.25em;
@@ -91,5 +91,78 @@
       opacity: 1;
       visibility: visible;
     }
+  }
+}
+
+@media (max-width: 1300px) {
+  .blog {
+    align-items: center;
+    height: auto;
+  }
+
+  .blog-info {
+    height: 22em;
+    padding-bottom: 3em;
+    width: 100%;
+  }
+
+  .blog-promo {
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    max-height: 50em;
+    padding-bottom: 0;
+    width: 82vw;
+  }
+
+  .view-promo {
+    margin: 0 .5em 3em;
+    width: 18.5em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .blog {
+    padding: 0;
+  }
+
+  .blog-info {
+    height: auto;
+    width: 82vw;
+  }
+
+  .blog-promo {
+    width: 82vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    justify-content: space-between;
+    max-height: 120em;
+  }
+
+  .blog-info {
+    height: 16em;
+
+    h4 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .blog-promo {
+    align-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media (max-width: 623px) {
+  .blog {
+    height: 120em;
   }
 }

@@ -11,3 +11,34 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  .reservation {
+    height: 30em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .reservation,
+  .menu-full,
+  .blog-info {
+    p {
+      box-sizing: padding-box;
+      font-size: 1.2em;
+      padding: 0 .5em;
+      width: 96%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation {
+    h1 {
+      font-size: 1.6em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+}

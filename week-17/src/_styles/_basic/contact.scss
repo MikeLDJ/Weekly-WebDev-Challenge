@@ -29,7 +29,8 @@
   form {
     @include flex(center);
     flex-direction: column;
-    width: 80.75em;
+    width: 100%;
+    max-width: 80.75em;
   }
 }
 
@@ -98,13 +99,13 @@
   @include flex(space-between);
   align-self: center;
   flex-direction: row;
-  height: 335px;
-  width: 940px;
+  height: 20.94em;
+  width: 59em;
 
   figure {
     @include flex(center);
     height: 9em;
-    margin: 0;
+    margin: 0 .2em;
 
     img {
       align-self: center;
@@ -172,5 +173,67 @@
     h5 {
       display: none;
     }
+  }
+}
+
+@media (max-width: 1300px) {
+  .form-data,
+  .form-message {
+    align-self: center;
+    width: 85%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contact-form {
+    h4 {
+      margin: 1em 0;
+    }
+
+    form {
+      width: 100%;
+    }
+  }
+
+  .form-data,
+  .form-message {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 90%;;
+
+    input {
+      box-sizing: border-box;
+      margin: .5em 0;
+
+      &:nth-child(2) {
+        margin: 0;
+      }
+    }
+  }
+
+  .contact-details {
+    width: 96vw;
+  }
+
+  .data-email,
+  .data-map,
+  .data-phone {
+    width: 27vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+
+  .data-email,
+  .data-map,
+  .data-phone {
+    align-self: center;
+    width: 16em;
   }
 }

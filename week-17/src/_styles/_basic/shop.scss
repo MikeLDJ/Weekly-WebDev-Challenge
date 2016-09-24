@@ -49,7 +49,8 @@
   align-items: center;
   height: 15.625em;
   margin: 0 auto;
-  width: 67.5em;
+  padding: 0 1em;
+  max-width: 70em;
 
   p {
     font-family: 'Nanami Book', Arial, sans-serif;
@@ -99,4 +100,70 @@
   background-color: $pipe;
   height: 6.5625em;
   width: .125em;
+}
+
+@media (max-width: 1300px) {
+  .shop {
+    height: 37.5em;
+  }
+
+  .promo {
+    img {
+      height: 10em;
+      margin: .4em;
+    }
+
+    .price {
+      font-size: 3em;
+    }
+
+    button {
+      font-size: 1em;
+    }
+  }
+
+  .shopping {
+    width: 75vw;
+
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .shop {
+    @include img('../images/lemon-cake.jpg', -100px, 100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .promo {
+    margin: 0;
+    width: 100%;
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      height: 8em;
+    }
+
+    p {
+      font-size: 1em;
+      width: 80%;
+    }
+  }
+
+  .shopping {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .pipe {
+    height: .125em;
+    width: 12em;
+  }
 }

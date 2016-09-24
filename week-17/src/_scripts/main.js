@@ -55,3 +55,12 @@ $(document).ready(function(){
     pagination: false
   });
 });
+
+// --- Mobile Navigation Menu ---
+
+$(document).ready(function() {
+  $('.nav-main a').click(function(e) {
+    $('ul').toggleClass('open');
+    e.preventDefault();
+  });
+});

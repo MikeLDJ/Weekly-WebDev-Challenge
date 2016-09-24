@@ -52,15 +52,95 @@
         background-color: $transparent-color;
         box-sizing: border-box;
         color: $font-light;
-        height: 90%;
+        height: 80%;
         letter-spacing: .01em;
         margin: 10%;
-        padding-top: 2em;
+        padding-top: 1.8em;
       }
     }
 
     &:last-child {
       @include img('../images/burger.jpg', center, 25%);
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .features {
+    height: 37.5em;
+
+    h2 {
+      font-size: 2.6em;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .features {
+    height: 35em;
+  }
+
+  .gallery-element {
+    &:nth-child(2) {
+      h2 {
+        font-size: 2em;
+        margin: 5%;
+      }
+    }
+  }
+
+  .gallery-up {
+    .gallery-element {
+      &:first-child {
+        @include img('../images/icecream.jpg', center, 33.33%);
+      }
+
+      &:nth-child(2) {
+        flex-basis: 33.33%;
+      }
+
+      &:last-child {
+        @include img('../images/cheese-cake.jpg', center, 33.33%);
+      }
+    }
+  }
+
+  .gallery-down {
+    .gallery-element {
+      &:first-child {
+        @include img('../images/cookies.jpg', center, 33.33%);
+      }
+
+      &:nth-child(2) {
+        @include img('../images/croissants.jpg', center, 33.33%);
+
+        h2 {
+          padding: 2em;
+        }
+      }
+
+      &:last-child {
+        @include img('../images/burger.jpg', center, 33.33%);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    height: 120em;
+  }
+
+  .gallery-up,
+  .gallery-down {
+    flex-direction: column;
+
+    .gallery-element {
+
+      h2 {
+        font-size: 2.6em;
+        margin-top: 2em;
+      }
     }
   }
 }

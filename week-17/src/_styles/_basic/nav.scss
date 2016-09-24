@@ -24,6 +24,10 @@ nav {
 .nav-main {
   display: flex;
 
+  .mobile-button {
+    display: none;
+  }
+
   a {
     align-self: center;
     color: $link;
@@ -45,10 +49,6 @@ nav {
     text-transform: uppercase;
   }
 
-  .mobile-button {
-    left: -9999em;
-    position: absolute;
-  }
 }
 
 // media queries
@@ -79,5 +79,40 @@ nav {
 }
 
 @media (max-width: 800px) {
-  // todo
+  .nav-main {
+    a {
+      font-size: 1.2em;
+    }
+
+    img {
+      height: 1.5em;
+      margin-top: .4em;
+    }
+
+    .mobile-button {
+      display: block;
+      margin-left: 50vw;
+    }
+
+    ul {
+      display: none;
+      padding: 0;
+
+      &.open {
+        background-color: $font-light;
+        display: block;
+        left: 0;
+        margin: 3.45em 0 5em;
+        padding-bottom: 100vh;
+        position: absolute;
+        width: 100%;
+
+        li {
+          display: flex;
+          justify-content: center;
+          margin: .5em 2em;
+        }
+      }
+    }
+  }
 }

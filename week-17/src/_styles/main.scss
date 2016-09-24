@@ -21,23 +21,6 @@
 @import '_basic/contact';
 @import '_basic/footer';
 
-// Import Media Queries
-@import '_rwd/1300';
-@import '_rwd/1100';
-@import '_rwd/768';
-
-
-
-//General
-
 * {
-  box-sizing: border-box;
-  transition: all 1s ease; // just for fun with resizing window
-}
-
-//Debug
-
-* {
-  // border: 1px solid red;
-  // background-color: grey;
+  border: 1px solid red;
 }

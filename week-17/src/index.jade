@@ -8,9 +8,10 @@ block content
           a(href="#home")
             img(src="images/nav-logo.png" alt="Top Food & Drink Logo")
         .nav-main
+          .mobile-button
+            a(href="#")
+              img(src="images/hamburger-menu.svg" alt="menu")
           ul
-            li.mobile-button
-              a(href="#") Menu
             each element in ['home', 'reservation', 'menu', 'blog', 'features', 'shop',   'contacts']
               - url= "#" + element
               li
