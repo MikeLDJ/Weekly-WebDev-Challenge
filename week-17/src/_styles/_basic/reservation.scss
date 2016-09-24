@@ -12,13 +12,13 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 81rem) {
   .reservation {
     height: 30em;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 68rem) {
   .reservation,
   .menu-full,
   .blog-info {
@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .reservation {
     h1 {
       font-size: 1.6em;

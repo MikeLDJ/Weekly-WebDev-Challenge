@@ -53,7 +53,7 @@ nav {
 
 // media queries
 
-@media (max-width: 1100px) {
+@media (max-width: 68rem) {
   header,
   .nav-wrapper {
     height: 4em;
@@ -78,7 +78,7 @@ nav {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
   .nav-main {
     a {
       font-size: 1.2em;

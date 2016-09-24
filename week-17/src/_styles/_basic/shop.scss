@@ -4,7 +4,7 @@
   @include flex(flex-end);
   @include img('../images/lemon-cake.jpg', center, 100%);
   align-items: center;
-  height: 50em;
+  height: 50rem;
 }
 
 .promo {
@@ -18,7 +18,7 @@
     color: $font-light;
     font-size: 1.125em;
     margin: 0 3em;
-    width: 500px;
+    width: 31.25rem;
   }
 
   .price {
@@ -47,7 +47,7 @@
 .shopping {
   @include flex(space-between);
   align-items: center;
-  height: 15.625em;
+  height: 15.625rem;
   margin: 0 auto;
   padding: 0 1em;
   max-width: 70em;
@@ -99,12 +99,12 @@
 .pipe {
   background-color: $pipe;
   height: 6.5625em;
-  width: .125em;
+  width: .1rem;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 81rem) {
   .shop {
-    height: 37.5em;
+    height: 37.5rem;
   }
 
   .promo {
@@ -131,13 +131,13 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 68rem) {
   .shop {
     @include img('../images/lemon-cake.jpg', -100px, 100%);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .promo {
     margin: 0;
     width: 100%;

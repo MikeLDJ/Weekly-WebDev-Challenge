@@ -11,7 +11,7 @@
   @include img('../images/pie.jpg', center, normal);
   align-items: center;
   flex-direction: column;
-  height: 800px;
+  height: 50rem;
   margin: 0 auto;
   width: 100%;
 
@@ -76,9 +76,9 @@
 .data-email,
 .data-map,
 .data-phone {
-  height: 270px;
+  height: 16.875rem;
   margin: 2em 0;
-  width: 290px;
+  width: 18.125rem;
 
   h6,
   p {
@@ -135,7 +135,7 @@
   background-color: $link;
   display: flex;
   flex-direction: column;
-  height: 550px;
+  height: 34.375rem;
   position: relative;
 
   iframe {
@@ -176,7 +176,7 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 81rem) {
   .form-data,
   .form-message {
     align-self: center;
@@ -184,7 +184,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 68rem) {
   .contact-form {
     h4 {
       margin: 1em 0;
@@ -223,7 +223,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .contact-details {
     flex-direction: column;
     height: auto;
