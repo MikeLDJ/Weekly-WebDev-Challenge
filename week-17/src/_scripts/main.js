@@ -64,3 +64,15 @@ $(document).ready(function() {
     e.preventDefault();
   });
 });
+
+// --- Map fix ---
+// when scrolling, and pointer reaches map,
+// map start zooming instead scrolling page.
+// In CSS added rule: pointer-event: none, and this code
+// should restore zoom event after click on map.
+
+(function() {
+  $('.contact-map').click(function () {
+      $('.contact-map iframe').css("pointer-events", "auto");
+  });
+})();

@@ -8,7 +8,7 @@
 .contact-form {
   @include flex(center);
   @include button;
-  @include img('../images/pie.jpg', center, normal);
+  @include img('../images/pie.jpg', center, 100%);
   align-items: center;
   flex-direction: column;
   height: 50rem;
@@ -115,19 +115,19 @@
 
 .data-email {
   figure {
-    @include img('../images/bg-mail.jpg', bottom center, normal);
+    @include img('../images/bg-mail.jpg', bottom center, 100%);
   }
 }
 
 .data-map {
   figure {
-    @include img('../images/bg-map.jpg', bottom center, normal);
+    @include img('../images/bg-map.jpg', bottom center, 100%);
   }
 }
 
 .data-phone {
   figure {
-    @include img('../images/bg-phone.jpg', bottom center, normal);
+    @include img('../images/bg-phone.jpg', bottom center, 100%);
   }
 }
 
@@ -141,6 +141,7 @@
   iframe {
     height: 100%;
     opacity: .5;
+    pointer-events: none;
     transition: opacity .3s ease-in-out;
     width: 100%;
   }
